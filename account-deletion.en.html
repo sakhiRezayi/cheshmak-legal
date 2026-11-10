@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Delete your Cheshmak account</title>
+<style>
+:root{color-scheme:light dark;--fg:#1a1a1a;--bg:#fff;--muted:#555;--brand:#1F3E8C;--line:#d0d4dc;--warn-bg:#fff4d6;--warn-fg:#5c4400}
+@media (prefers-color-scheme:dark){:root{--fg:#ececec;--bg:#121418;--muted:#a8a8a8;--brand:#9db3ff;--line:#363b45;--warn-bg:#3a3000;--warn-fg:#ffe28a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Tahoma,"Noto Naskh Arabic",sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:46rem;margin:0 auto;padding:1rem 1rem 3rem}
+.draft{background:var(--warn-bg);color:var(--warn-fg);border:2px solid currentColor;border-radius:8px;padding:.75rem 1rem;font-weight:700;margin:0 0 1rem}
+h1,h2,h3{color:var(--brand);line-height:1.3}
+h1{font-size:1.6rem}h2{font-size:1.25rem;margin-top:2rem}h3{font-size:1.1rem}
+.meta{color:var(--muted)}
+.scroll{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;min-width:32rem}
+th,td{border:1px solid var(--line);padding:.5rem;text-align:start;vertical-align:top}
+th{background:color-mix(in srgb,var(--brand) 10%,transparent)}
+.tbd{background:var(--warn-bg);color:var(--warn-fg);padding:0 .25em;border-radius:3px}
+a{color:var(--brand)}
+li{margin:.25rem 0}
+</style>
+</head>
+<body>
+<main>
+<p class="draft" role="note">DRAFT — not legal advice — pending legal and native-speaker review</p>
+
+<h1>Delete your Cheshmak account</h1>
+<p class="meta">Effective date: {{EFFECTIVE_DATE}} · Published at https://sakhirezayi.github.io/cheshmak-legal/account-deletion.en.html</p>
+<p>This page is for the <strong>Cheshmak</strong> dating app (Android, package <code>app.cheshmak.dating</code>) by <strong>{{CONTROLLER_NAME}}</strong>.</p>
+
+<h2>Option 1 – In the app (fastest)</h2>
+<ol>
+<li>Open Cheshmak and sign in.</li>
+<li>Open <strong>Settings</strong> (Profile tab → Settings, or the “Open settings” button at the top of Discover).</li>
+<li>Scroll to <strong>Delete account</strong> and tap <strong>Delete my account</strong>.</li>
+<li>Tap <strong>Yes, delete</strong>.</li>
+<li>Enter your password to confirm it is you. If you signed in more than 5 minutes ago, the app asks for your password again.</li>
+</ol>
+<p>Your account is deleted straight away and you are signed out. This also works if your account has been suspended or banned: the restricted-account screen has a <strong>Delete my account</strong> button.</p>
+
+<h2>Option 2 – Without the app</h2>
+<p>If you have uninstalled the app or cannot sign in:</p>
+<ol>
+<li>Email <strong>{{SUPPORT_EMAIL}}</strong> from the email address of your Cheshmak account with the subject “Delete my account”.</li>
+<li>We send a confirmation link or code to that address. This proves the account is yours, so no one else can delete it.</li>
+<li>After you confirm, we delete the account within <span class="tbd">7 days</span> and at the latest within <strong>one month</strong>, and email you when it is done.</li>
+</ol>
+<p>We never ask for your password by email.</p>
+
+<h2>What is deleted</h2>
+<ul>
+<li>Your email address, password and all sign-in sessions</li>
+<li>Your profile (name, birth date, gender, bio, goal, interests, city, language, optional profile details and prompt answers, settings)</li>
+<li>Your approximate location, if one was stored</li>
+<li>All your photos</li>
+<li>Your likes, passes, matches, read markers and blocks</li>
+<li>Your messages (with the exception below)</li>
+<li>Rate-limit counters</li>
+</ul>
+<p>On your phone the app also forgets your age check, your onboarding drafts and its cached photos.</p>
+
+<h2>What is kept, why, and for how long</h2>
+<div class="scroll"><table>
+<thead><tr><th>Data</th><th>Why</th><th>How long</th></tr></thead>
+<tbody>
+<tr><td>Copies of messages between you and another person in an <strong>unresolved report</strong></td><td>Evidence to protect users and handle the report</td><td><span class="tbd">180 days — provisional</span></td></tr>
+<tr><td>Reports you made (with your name removed) and reports about you (without your profile)</td><td>Safety review and spotting repeat offenders</td><td><span class="tbd">180 days after the report is resolved — provisional</span></td></tr>
+<tr><td>A record that the account existed and was deleted (internal id and date)</td><td>To complete pending safety reviews</td><td><span class="tbd">180 days — provisional</span></td></tr>
+<tr><td><strong>Only if your account was suspended or banned:</strong> the restriction record, linked reports, evidence, and a one-way code (keyed hash) of your email</td><td>To protect other users, block re-registration while the ban applies, and defend legal claims</td><td><span class="tbd">2 years — to be confirmed</span></td></tr>
+<tr><td>Hosting backups and logs</td><td>Technical recovery and security</td><td><span class="tbd">{{BACKUP_LOG_DAYS}} days — provider backup/log window</span></td></tr>
+</tbody>
+</table></div>
+<p>None of this is shown to other users or used for anything else, and it is deleted when the period ends.</p>
+
+<h2>Delete only some data</h2>
+<p>You do not have to delete your account to remove data: you can delete photos, edit or clear your profile text, turn off discovery, or block people in the app. For anything else, email <strong>{{SUPPORT_EMAIL}}</strong>.</p>
+
+<h2>Questions</h2>
+<p><strong>{{SUPPORT_EMAIL}}</strong> — Dari, Pashto or English. See our <a href="https://sakhirezayi.github.io/cheshmak-legal/privacy-policy.en.html">Privacy Policy</a>.</p>
+</main>
+</body>
+</html>
